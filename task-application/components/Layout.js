@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     backgroundColor: '#222f3e',
     flex: 1,
-    alignItems: 'center',
+    alignContent: 'center',
   },
   title: {
     color: '#ffffff',
