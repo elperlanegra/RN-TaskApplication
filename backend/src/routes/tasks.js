@@ -1,12 +1,12 @@
 import { Router } from "express";
 import {
-  deleteUser,
-  getUser,
-  saveUser,
-  getUsers,
-  updateUser,
-  getUsersCount,
-} from "../controllers/user";
+  deleteTask,
+  getTasks,
+  saveTask,
+  getTask,
+  updateTask,
+  getTasksCount,
+} from "../controllers/tasks";
 
 const router = Router();
 
@@ -38,7 +38,7 @@ const router = Router();
  *    summary: Get all Tasks
  *    tags: [Tasks]
  */
-router.get("/users", getUsers);
+router.get("/tasks", getTasks);
 
 /**
  * @swagger
@@ -47,7 +47,7 @@ router.get("/users", getUsers);
  *    summary: get total tasks counter
  *    tags: [Tasks]
  */
-router.get("/users/count", getUsersCount);
+router.get("/tasks/count", getTasksCount);
 
 /**
  * @swagger
@@ -56,7 +56,7 @@ router.get("/users/count", getUsersCount);
  *    summary: save a new Task
  *    tags: [Tasks]
  */
-router.post("/users", saveUser);
+router.post("/tasks", saveTask);
 
 /**
  * @swagger
@@ -65,7 +65,7 @@ router.post("/users", saveUser);
  *    summary: Get task by Id
  *    tags: [Tasks]
  */
-router.get("/users/:id", getUser);
+router.get("/tasks/:id", getTask);
 
 /**
  * @swagger
@@ -74,7 +74,7 @@ router.get("/users/:id", getUser);
  *    summary: delete a task by Id
  *    tags: [Tasks]
  */
-router.delete("/users/:id", deleteUser);
+router.delete("/tasks/:id", deleteTask);
 
 /**
  * @swagger
@@ -83,6 +83,6 @@ router.delete("/users/:id", deleteUser);
  *    summary: update a task by Id
  *    tags: [Tasks]
  */
-router.put("/users/:id", updateUser);
+router.put("/tasks/:id", updateTask);
 
 export default router;

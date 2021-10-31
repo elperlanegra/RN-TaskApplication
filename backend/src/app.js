@@ -3,6 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 
 import userRoutes from './routes/users';
+import tasksRoutes from './routes/tasks';
 
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUI from 'swagger-ui-express';
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(userRoutes);
+app.use(tasksRoutes);
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(specs));
 
 export default app;
