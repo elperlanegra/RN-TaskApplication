@@ -31,7 +31,7 @@ const TaskFormScreen = ({ navigation, route }) => {
         await saveTask(task);
       } else {
         console.log(route.params.id, task)
-        await updateTask(route.params.id, {...task});
+        await updateTask(route.params.id, { ...task });
       }
       navigation.navigate("HomeScreen");
     } catch (error) {
