@@ -6,3 +6,11 @@
 * Babel
 * Swagger 
 * Docker
+
+### Installation
+```	
+npm install
+``` 
+```	
+npm run dev
+```
