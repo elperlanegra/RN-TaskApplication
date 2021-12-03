@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StatusBar, StyleSheet } from 'react-native';
+import React from "react";
+import { View, StatusBar, StyleSheet } from "react-native";
 
 const Layout = ({ children }) => {
   return (
@@ -9,18 +9,17 @@ const Layout = ({ children }) => {
     </View>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     paddingTop: 5,
-    backgroundColor: '#222f3e',
+    backgroundColor: "#222f3e",
     flex: 1,
-    alignContent: 'center',
+    alignItems: "center",
   },
   title: {
-    color: '#ffffff',
+    color: "#ffffff",
     fontSize: 20,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 10,
   },
 });
